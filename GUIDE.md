@@ -7,6 +7,12 @@ This guide provides a detailed visual walkthrough for setting up and deploying t
 ## Step 1: Set Up the Google Sheet Schema
 Create a new Google Sheet and set up the four required tabs (`SERVICES_TABLE`, `CLIENTS_TABLE`, `SETTINGS`, and `INVOICE_TEMPLATE`).
 
+![Google Sheet Setup](./assets/step3-sheet.png)
+This is CLIENTS table
+
+![Google Sheet Setup](./assets/step4-sheet.png)
+This is SETTINGS tab for storing initial values
+
 
 ## Detailed Spreadsheet Formula Reference
 
@@ -43,15 +49,7 @@ Apply these formulas to the corresponding cells on the `INVOICE_TEMPLATE` sheet 
 | `F20` | **TAX RATE** | `7.00%` | Standard local VAT rate. |
 | `F21` | **TAX** | `=IF(F19="", "", F19 * F20)` | Computes tax amount based on subtotal. |
 | `F22` | **TOTAL** | `=IF(F19="", "", F19 + F21)` | Final payable balance formatted for PDF export. |
-
-
-![Google Sheet Setup](./assets/step3-sheet.png)
-This is CLIENTS table
-
-![Google Sheet Setup](./assets/step4-sheet.png)
-This is SETTINGS tab for storing initial values
 ---
-
 
 ## Step 2: Add Code to Google Apps Script
 1. Open **Extensions > Apps Script**.
@@ -66,6 +64,7 @@ This is SETTINGS tab for storing initial values
 Protect formula cells on `INVOICE_TEMPLATE` (`F14:F22`) and the sequence counter on `SETTINGS` (`B1`).
 
 ![Range Protection](./assets/step3-protection.png)
+Right-clict and select "protect range" and follow the promt.
 
 ---
 
@@ -74,3 +73,5 @@ Protect formula cells on `INVOICE_TEMPLATE` (`F14:F22`) and the sequence counter
 2. Select **+ Add Trigger** and set it to run `processAndSendDueInvoices` daily.
 
 ![Time Driven Trigger Setup](./assets/step4-trigger.png)
+![Time Driven Trigger Setup](./assets/step4-trigger1.png)
+![Time Driven Trigger Setup](./assets/step4-trigger2.png)
