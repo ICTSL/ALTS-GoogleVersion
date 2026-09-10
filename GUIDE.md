@@ -7,14 +7,12 @@ This guide provides a detailed visual walkthrough for setting up and deploying t
 ## Step 1: Set Up the Google Sheet Schema
 Create a new Google Sheet and set up the four required tabs (`SERVICES_TABLE`, `CLIENTS_TABLE`, `SETTINGS`, and `INVOICE_TEMPLATE`).
 
-![Google Sheet Setup](./assets/step1-sheet.png)
-This is the invoice template. 
-![Google Sheet Setup](./assets/step2-sheet.png)
-This is SERVICES table
 ![Google Sheet Setup](./assets/step3-sheet.png)
-This is CLIENTS table
+This is INVOICE table
+
 ![Google Sheet Setup](./assets/step4-sheet.png)
-This is SETTINGS tab for storing initial values
+This is CLIENTS tab for storing initial values
+
 
 ## Detailed Spreadsheet Formula Reference
 
@@ -24,6 +22,9 @@ Below are the exact formulas required to power the calculations across `SERVICES
 
 ### 1. `SERVICES_TABLE` Formulas
 
+![Google Sheet Setup](./assets/step2-sheet.png)
+
+This is SERVICES table
 To enable automated line-item tracking, place this formula in row 2 of Column `J` and extend it down the column:
 
 | Column Name | Column | Formula / Value | Description |
@@ -35,6 +36,9 @@ To enable automated line-item tracking, place this formula in row 2 of Column `J
 ---
 
 ### 2. `INVOICE_TEMPLATE` Formulas
+
+![Google Sheet Setup](./assets/step1-sheet.png)
+This is the invoice template. 
 
 Apply these formulas to the corresponding cells on the `INVOICE_TEMPLATE` sheet to ensure dynamic calculation when line items are populated:
 
