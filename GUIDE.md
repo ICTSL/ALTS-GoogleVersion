@@ -7,12 +7,6 @@ This guide provides a detailed visual walkthrough for setting up and deploying t
 ## Step 1: Set Up the Google Sheet Schema
 Create a new Google Sheet and set up the four required tabs (`SERVICES_TABLE`, `CLIENTS_TABLE`, `SETTINGS`, and `INVOICE_TEMPLATE`).
 
-![Google Sheet Setup](./assets/step3-sheet.png)
-This is INVOICE table
-
-![Google Sheet Setup](./assets/step4-sheet.png)
-This is CLIENTS tab for storing initial values
-
 
 ## Detailed Spreadsheet Formula Reference
 
@@ -49,7 +43,15 @@ Apply these formulas to the corresponding cells on the `INVOICE_TEMPLATE` sheet 
 | `F20` | **TAX RATE** | `7.00%` | Standard local VAT rate. |
 | `F21` | **TAX** | `=IF(F19="", "", F19 * F20)` | Computes tax amount based on subtotal. |
 | `F22` | **TOTAL** | `=IF(F19="", "", F19 + F21)` | Final payable balance formatted for PDF export. |
+
+
+![Google Sheet Setup](./assets/step3-sheet.png)
+This is CLIENTS table
+
+![Google Sheet Setup](./assets/step4-sheet.png)
+This is SETTINGS tab for storing initial values
 ---
+
 
 ## Step 2: Add Code to Google Apps Script
 1. Open **Extensions > Apps Script**.
