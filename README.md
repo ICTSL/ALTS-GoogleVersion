@@ -1,8 +1,8 @@
 <!-- Badges with Clickable Link Destinations -->
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![Google Apps Script](https://img.shields.io/badge/Google%20Apps%20Script-4285F4?style=flat&logo=google&logoColor=white)](https://developers.google.com/apps-script)
-[![Google Sheets](https://img.shields.io/badge/Google%20Sheets-34A853?style=flat&logo=googlesheets&logoColor=white)](https://workspace.google.com/products/sheets/)
-[![Platform](https://img.shields.io/badge/Platform-Google%20Workspace-000000.svg)](https://workspace.google.com/)
+<a href="./LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+<a href="https://developers.google.com/apps-script" target="_blank"><img src="https://img.shields.io/badge/Google%20Apps%20Script-4285F4?style=flat&logo=google&logoColor=white" alt="Google Apps Script"></a>
+<a href="https://workspace.google.com/products/sheets/" target="_blank"><img src="https://img.shields.io/badge/Google%20Sheets-34A853?style=flat&logo=googlesheets&logoColor=white" alt="Google Sheets"></a>
+<a href="https://workspace.google.com/" target="_blank"><img src="https://img.shields.io/badge/Platform-Google%20Workspace-000000.svg" alt="Platform"></a>
 
 # ALTS-GoogleVersion: Automated Lifecycle Tracking System (Google Workspace Edition)
 
