@@ -1,9 +1,8 @@
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-![Google Apps Script](https://img.shields.io/badge/Google%20Apps%20Script-4285F4?style=flat&logo=google&logoColor=white)
-![Google Sheets](https://img.shields.io/badge/Google%20Sheets-34A853?style=flat&logo=googlesheets&logoColor=white)
-![Platform](https://img.shields.io/badge/Platform-Google%20Workspace-000000.svg)
-
-# ALTS-GoogleVersion: Automated Lifecycle Tracking System (Google Workspace Edition)
+<!-- Badges with Clickable Link Destinations -->
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+[![Google Apps Script](https://img.shields.io/badge/Google%20Apps%20Script-4285F4?style=flat&logo=google&logoColor=white)](https://developers.google.com/apps-script)
+[![Google Sheets](https://img.shields.io/badge/Google%20Sheets-34A853?style=flat&logo=googlesheets&logoColor=white)](https://workspace.google.com/products/sheets/)
+[![Platform](https://img.shields.io/badge/Platform-Google%20Workspace-000000.svg)](https://workspace.google.com/)
 
 # ALTS-GoogleVersion: Automated Lifecycle Tracking System (Google Workspace Edition)
 
